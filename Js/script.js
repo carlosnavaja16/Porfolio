@@ -149,7 +149,7 @@ function formProcessing()
     document.getElementById("email").value = "";
     document.getElementById("comment").value = "";
     
-    document.getElementById("thanks").innerHTML = "Thank you, " + name + ", your comment has been submitted.";
+    document.getElementById("thanks").innerHTML = "Thank you, " + name + " your comment has been submitted.";
 }
 
 

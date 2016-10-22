@@ -1,9 +1,9 @@
 html
 {
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 10px;
 	left: 0;
-	background-image: url("../Imgs/background.png");
+	background-image: url("../Imgs/background2.png");
 }
 
 .fixed
@@ -21,6 +21,11 @@ html
 	margin-right: auto;
     margin-top: 70px;
     margin-bottom: 10px;
+}
+
+#welcome
+{
+    text-align: center;
 }
 
 .screenshot
@@ -42,9 +47,28 @@ html
 
 .center
 {
-    width: 1200px;
-	margin: auto;
-	
+    max-width: 1200px;
+	margin: auto;	
+}
+
+.right
+{
+    text-align: right;
+}
+
+table
+{
+    width: 100%;
+}
+
+strong
+{
+    color: white;
+}
+
+em
+{
+    color: white;
 }
 
 .socialMedia
@@ -63,9 +87,8 @@ img.socialMediaButton:hover
 .content
 {
     background-color: #141414;  
-    box-shadow: 0 40px 50px 30px black;
+    box-shadow: 0px 15px 40px 5px black;
     color: white;
-    height: 100%;
     font-size: 12px;
     padding-top: 40px;
     padding-right: 50px;
@@ -73,17 +96,10 @@ img.socialMediaButton:hover
     padding-bottom: 40px;
     margin: 20px;
     display:none;
+    border-radius: 5px;
 }
 
-.left
-{
-    float: left;
-}
 
-.right
-{
-    float: right;
-}
 
 .button
 {
@@ -91,6 +107,7 @@ img.socialMediaButton:hover
     width: 125px;
     display: block;
     background-color: #373737;
+    border-radius: 5px;
     color: white;
     text-decoration: none;
     margin-left: auto;
@@ -111,25 +128,32 @@ img.socialMediaButton:hover
 
 input[type=text], textarea
 {
+    
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    border: 1px solid lightgray;
-    border-radius: 0px;
+    border: 1px solid black;
+    border-radius: 5px;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
+input[type=text]:focus, textarea:focus
+{
+    outline: 0;
 }
 
 
 nav ul 
 {
-    box-shadow: 0 20px 30px 10px black;
+    box-shadow: 0px 15px 40px 5px black;
+    border-radius: 5px;
     background-color:  #373737;
     margin: 0;
     padding: 0;
     width: 100%;
-    text-align: center;
-    
-    
+    text-align: center; 
 }
 
 nav ul li
@@ -197,3 +221,120 @@ nav ul li:hover > ul
     text-align: center;
 }
 
+.social-link
+{
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+.social-link li 
+{
+    list-style: none;
+	display:inline-block;
+    margin: auto;
+	width:50px;
+	height:50px;
+	text-align:center;
+	font-size:25px;
+	color:#fff;
+	background:#222222;
+	border-radius:50%;
+	transition:all 0.3s ease-in-out;
+}
+
+.social-link li a
+{
+    list-style: none;
+	display:inline-block;
+	width:50px;
+	height:50px;
+	text-align:center;
+	line-height:50px;
+	font-size:25px;
+	color:#fff;
+	background:#222222;
+	border-radius:50%;
+	transition:all 0.3s ease-in-out;
+}
+
+.social-link li a:hover, .social-link li a:focus
+{
+	text-decoration:none;
+}
+
+.twitter a:hover 
+{
+	background: #55acee;
+}
+.facebook a:hover 
+{
+	background: #3b5998;
+}
+.pinterest a:hover 
+{
+	background: #cb2026;
+}
+.gplus a:hover 
+{
+	background: #dd4b39;
+}
+.dribbble a:hover
+ {
+	background: purple;
+}
+
+@media screen and (max-width: 700px){
+    .logo
+    {
+        content:url("../Imgs/logo2.png");
+        max-width: 100%;
+        height: auto;
+    }
+
+    nav ul li
+    {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .content
+    {
+        font-size: 12px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        margin: 10px;
+
+    }
+
+    .fixed
+    {
+        position: relative;
+        top: 0;
+        margin: auto;
+        width: 100%;
+    }
+
+    .screenshot
+    {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .left
+    {
+        float: center;
+    }
+
+    .right
+    {
+        float: center;
+    }
+}
