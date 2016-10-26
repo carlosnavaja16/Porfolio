@@ -33,7 +33,7 @@ html
 	background-color:  #373737;
     color: white;
 	max-width: 100%;
-	display: block;
+	display: none;
     margin: auto;
     text-align: center;
 	text-decoration: none;
