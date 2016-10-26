@@ -124,7 +124,23 @@ $(document).ready(function(){
             
         });
         
+
         
+		if ($(window).width() < 700)
+		{
+			$("#menuToggle").click(function()
+			{
+		
+				$("nav ul li").slideToggle(600);
+				
+			});
+			
+			$("nav ul li").click(function()
+			{
+				$("nav ul li").slideToggle(600);
+			});
+		}
+
     
 });
 
